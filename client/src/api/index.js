@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'http://localhost:5000' });
+const api = axios.create({ baseURL: 'https://notesapp-b4by.onrender.com' });
 
 api.interceptors.request.use((req) => {
     const token = localStorage.getItem('token'); // Ensure token is correctly saved in localStorage

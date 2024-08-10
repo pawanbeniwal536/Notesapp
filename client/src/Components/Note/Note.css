@@ -1,0 +1,179 @@
+.note-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden; /* Prevents overflow of content */
+  position: relative; /* Ensures buttons can be positioned absolutely */
+  transition: all 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.note-card:hover {
+  transform: translateY(-5px); /* Adds a slight upward movement on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
+.note-title {
+  font-size: 1.5em;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Handles overflow of long titles */
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.note-content {
+  font-size: 1em;
+  margin: 0;
+  overflow: hidden; /* Ensures content doesn't overflow */
+  max-height: 14.5em; /* Approx. 5 lines of text */
+  overflow-y: auto; /* Adds a vertical scrollbar if content exceeds max height */
+}
+
+.note-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.note-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.note-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 10px; /* Adds space between tags and actions */
+}
+
+.note-tag {
+  background: #e0e0e0;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* Pushes buttons to the bottom */
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+/* Ensure modal input fields take the full width */
+.modal-body .form-control {
+  width: 100%;
+}
+
+#remove-image-button{
+  border-radius: 5px;
+  background-color: #dc3545;
+  margin-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#delete-note-btn{
+  background-color: #dc3545;
+}
+
+.image-available p{
+  color: red;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.cancel-image-btn{
+  margin-top: 4px;
+}
+
+.image-not-store-update{
+    color: red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+
+
+.note-img {
+  width: 100%; /* Make sure the image container takes full width of the note */
+  max-height: auto; /* Limit the height of the image container */
+  overflow: hidden; /* Prevent overflow of the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-image {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto; /* Keep the aspect ratio by adjusting the height based on the width */
+  object-fit: cover; /* Cover the container without distorting the image */
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+
+
+
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Make sure the image doesn't exceed the modal width */
+  max-height: 300px; /* Adjust the maximum height as needed */
+  overflow: hidden; /* Hide overflow if the image exceeds the container */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+.image-preview-img {
+  width: auto; /* Adjust the width based on height */
+  height: 100%; /* Ensure the image height fits within the preview */
+  object-fit: contain; /* Contain the image within the preview without cropping */
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+.note-img {
+  width: 100%; /* Make sure the image container takes full width of the note */
+  max-height: auto; /* Limit the height of the image container */
+  overflow: hidden; /* Prevent overflow of the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-image {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto; /* Keep the aspect ratio by adjusting the height based on the width */
+  object-fit: cover; /* Cover the container without distorting the image */
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}

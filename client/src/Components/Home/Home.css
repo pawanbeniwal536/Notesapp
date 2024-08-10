@@ -1,0 +1,226 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Home Page Styles */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.folder-not-available{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.folder-not-available p{
+  color: white;
+}
+
+.create-folder-heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-content {
+  width: 100%;
+  max-width: 1050px;
+  background-color: #081f37;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folders-container, .notes-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 20px; */
+  flex-direction: column;
+  width: 100%;
+}
+
+.folder-form-cls{
+   display: flex;
+   justify-content: center;
+}
+
+.folder-card, .note-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+}
+
+.folder-header, .note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.folder-header h3, .note-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.folder-actions, .note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.folder-actions button, .note-actions button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.folder-actions button:hover, .note-actions button:hover {
+  background-color: #0056b3;
+}
+
+.add-folder-btn, .add-note-btn {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.add-folder-btn:hover, .add-note-btn:hover {
+  background-color: #218838;
+}
+
+.note-tags {
+  margin-top: 10px;
+}
+
+.note-tag {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.note-form-container, .folder-form-container {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.note-form-container form, .folder-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-form-container label, .folder-form-container label {
+  margin-bottom: 5px;
+}
+
+.note-form-container input, .folder-form-container input,
+.note-form-container textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.note-form-container button, .folder-form-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.note-form-container button:hover, .folder-form-container button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Search Bar Container */
+.form-search-bar {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Search Input Field */
+.form-search-bar input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus State */
+.form-search-bar input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Placeholder Style */
+.form-search-bar input[type="text"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Clear Button for Search Bar */
+.form-search-bar input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Input Active State */
+.form-search-bar input[type="text"]:active,
+.form-search-bar input[type="text"]:hover {
+  border-color: #007bff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .form-search-bar input[type="text"] {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

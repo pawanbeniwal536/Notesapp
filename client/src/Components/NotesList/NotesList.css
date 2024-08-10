@@ -1,0 +1,53 @@
+.notes-list-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('../../Assest/note-folder-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.notes-list-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
+.folder-name {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  text-align: center; /* Center the folder name */
+  color: #fff;
+}
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust based on desired width */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .notes-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .notes-list {
+    grid-template-columns: 1fr;
+  }
+  .notes-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

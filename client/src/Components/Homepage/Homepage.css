@@ -1,0 +1,14 @@
+.footer-call-cls{
+    position: reltive;
+    bottom: 0;
+    width: 100%;
+}
+.home-call-cls
+{
+    min-height: 80vh;
+    background-image: url('../../Assest/create-note-folder-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}

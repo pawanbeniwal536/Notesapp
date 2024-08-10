@@ -1,0 +1,55 @@
+   .landingpage-container{
+    height:  100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   }
+  
+  .home-container {
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .marquee-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  

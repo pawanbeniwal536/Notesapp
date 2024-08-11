@@ -1,3 +1,5 @@
+// for create a notes poper will be show
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { CreateNotes } from '../../action/notes';

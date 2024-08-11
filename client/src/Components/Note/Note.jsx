@@ -114,12 +114,12 @@ const Note = ({ note, deleteNote, editNote }) => {
                 <div className="image-preview">
                   <img src={newImage || note.image} alt="Preview" className="image-preview-img" />
                 </div>
+                <p className='image-not-store-update'>Only One image can store</p>
                 {newImage && (
                   <>
                   <Button variant="secondary" onClick={handleCancelImage} className='cancel-image-btn'>
                     Remove
                   </Button>
-                  <p className='image-not-store-update'>Only One image can store</p>
                   </>
                 )}
               </div>

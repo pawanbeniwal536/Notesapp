@@ -31,6 +31,13 @@
 
 .modal-footer {
   border-top: none;
+  display: flex;
+  justify-content: space-between; /* Space between buttons for better layout */
+}
+
+.modal-footer .btn {
+  flex: 1; /* Make buttons responsive */
+  margin: 0 5px; /* Add some space between buttons */
 }
 
 .modal-footer .btn-secondary {
@@ -49,7 +56,7 @@
 
 .rm-btn {
   margin-top: 5px;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -58,31 +65,44 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  text-align: center; /* Center text */
 }
 
 .image-preview img.uploaded-image {
-  max-width: 100%; /* Ensure the image fits within the modal */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   border: 2px solid #ccc;
-}
-
-.image-preview-cls {
-  max-height: 300px; /* Keep the original height */
-  overflow: visible; /* Allow overflow */
-  /* other properties */
+  margin-bottom: 10px; /* Add space between the image and the remove button */
 }
 
 .image-preview p {
   color: red;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 4px 5px;
   text-align: center;
   margin-top: 5px;
   border: 1px solid black;
   border-radius: 7px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center; /* Center the error message */
+  font-size: 14px;
+}
+
+.image-store-status {
+
+    color: red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+
 }

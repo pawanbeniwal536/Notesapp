@@ -1,3 +1,5 @@
+// used for show the notes data
+
 import React, { useState, useRef } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';

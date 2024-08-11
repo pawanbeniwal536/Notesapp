@@ -110,11 +110,13 @@ const NotePoper = ({ folderId, onNoteCreated }) => {
                   disabled={image !== null} // Disable input if an image is already uploaded
                 />
                 {image && (
+                  <>
                   <div className="image-preview image-preview-cls">
                     <img src={image} alt="Uploaded" className="uploaded-image" />
-                    <button type="button" className="btn btn-danger btn-sm rm-btn" onClick={handleRemoveImage}>Remove Image</button>
-                    <p>Only One image can store</p>
                   </div>
+                    <button type="button" className="btn btn-danger btn-sm rm-btn" onClick={handleRemoveImage}>Remove Image</button>
+                    <p className='image-store-status'>Only One image can store</p>
+                    </>
                 )}
               </div>
               {error && <div className="error-message">{error}</div>}
